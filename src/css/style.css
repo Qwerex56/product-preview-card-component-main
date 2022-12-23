@@ -30,11 +30,9 @@ body {
   z-index: 1;
 }
 
-@media screen and (min-width: 375px){
-    img.product-card__image{
-    content: url("/src/images/image-product-mobile.jpg");
-    max-width: 600px; /*234*/
-  }
+img.product-card__image{
+  content: url("/src/images/image-product-mobile.jpg");
+  max-width: 600px; /*234*/
 }
 
 @media screen and (min-width: 1440px){
