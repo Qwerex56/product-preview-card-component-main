@@ -44,11 +44,6 @@ body {
   }
 }
 
-.product-card__image {
-  content: url("/src/images/image-product-desktop.jpg");
-  max-width: 300px;
-}
-
 .product-card__info {
   margin: 35px;
   margin-top: 20px;
