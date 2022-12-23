@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub Pages](https://your-solution-url.com)
+- Solution URL: [GitHub Pages](https://qwerex56.github.io/product-preview-card-component-main/)
 
 ## My process
 
