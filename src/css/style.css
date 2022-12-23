@@ -31,14 +31,14 @@ body {
 }
 
 @media screen and (min-width: 375px){
-    .product-card__image{
+    img.product-card__image{
     content: url("/src/images/image-product-mobile.jpg");
     max-width: 600px; /*234*/
   }
 }
 
 @media screen and (min-width: 1440px){
-    .product-card__image{
+    img.product-card__image{
     content: url("/src/images/image-product-desktop.jpg");
     max-width: 300px; /*234*/
   }
