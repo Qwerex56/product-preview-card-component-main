@@ -1,0 +1,126 @@
+body {
+  background-color: var(--cream);
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 375px) {
+  .product-card {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px; /*472*/
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .product-card {
+    display: flex;
+    flex-direction: row;
+    max-width: 600px; /*472*/
+  }  
+}
+
+.product-card {
+  overflow: hidden;
+  border-radius: 10px;
+  min-width: 360px;
+  margin-top: 20vh;
+  background-color: var(--white);
+
+  z-index: 1;
+}
+
+@media screen and (min-width: 375px){
+    .product-card__image{
+    content: url("/src/images/image-product-mobile.jpg");
+    max-width: 600px; /*234*/
+  }
+}
+
+@media screen and (min-width: 1440px){
+    .product-card__image{
+    content: url("/src/images/image-product-desktop.jpg");
+    max-width: 300px; /*234*/
+  }
+}
+
+.product-card__info {
+  margin: 35px;
+  margin-top: 20px;
+}
+
+.product-card__product-type {
+  font-family: var(--montserrat);
+  font-size: 0.875rem;
+  text-transform: capitalize;
+  font-weight: var(--medium-weight);
+  color: var(--dark-grayish-blue);
+}
+
+@media screen and (min-width: 375px) {
+  .product-card__name {
+    font-size: 2.0rem;
+    line-height: 2.0rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .product-card__name {
+    font-size: 2.25rem;
+    line-height: 2.25rem;
+  }
+}
+
+.product-card__name {
+  font-family: var(--fraunces);
+  font-weight: var(--bold-weight);
+  color: var(--very-dark-blue);
+}
+
+.product-card__description {
+  font-family: var(--montserrat);
+  font-size: 0.875rem;
+  font-weight: var(--medium-weight);
+  line-height: 1.25rem;
+  color: var(--dark-grayish-blue);
+}
+
+.product-card__sale-price {
+  font-family: var(--fraunces);
+  font-size: 2.25rem;
+  font-weight: var(--bold-weight);
+  color: var(--dark-cyan);
+}
+
+.product-card__regular-price {
+  font-family: var(--montserrat);
+  font-size: 0.875rem;
+  font-weight: var(--medium-weight);
+  text-decoration: line-through;
+  color: var(--dark-grayish-blue);
+  vertical-align: middle;
+}
+
+.product-card__add-to-cart {
+  background-color: var(--dark-cyan);
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+  height: 50px;
+
+  font-family: var(--montserrat);
+  font-size: 0.875rem;
+  font-weight: var(--medium-weight);
+  color: var(--white);
+  vertical-align: middle;
+}
+
+.product-card__add-to-cart-svg {
+  width: 16px;
+}
+
+.product-card__add-to-cart:hover {
+  background-color: var(--very-dark-cyan);
+  transform: scale(1.025);
+  transition: 300ms;
+}
